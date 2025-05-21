@@ -352,7 +352,7 @@ def get_song(
     bestTitle = ""
     searchFor = artistName + " - " + title
     path = music_path + "/" + artistName + "/" + albumName
-    filePath = path + "/" + artistName + " - " + albumName
+    filePath = path + "/" + artistName + " - " + albumName + " - " + trackNumber
     filePath += " - " + title + ".mp3"
     os.makedirs(path, exist_ok=True)
 
