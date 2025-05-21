@@ -142,7 +142,7 @@ def update_mp3tag(
     artistName, albumName, title, trackNumber, trackTotal, year, disc, discTotal, genre
 ):
     path = music_path + "/" + artistName + "/" + albumName
-    filePath = path + "/" + artistName + " - "
+    filePath = path + "/" + artistName + " - " + albumName + " - " + trackNumber
     filePath += albumName + " - " + title + ".mp3"
 
     file_exists = exists(filePath)
